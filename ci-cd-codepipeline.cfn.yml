@@ -31,7 +31,7 @@ Parameters:
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: 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
+    Description: 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
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub personal access token
