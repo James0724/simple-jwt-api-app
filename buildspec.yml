@@ -7,10 +7,7 @@ phases:
       python: 3.7
     commands:
       - echo 'about to call dockerd'
-      - cd deployments/platformdeployment/Docker
       - docker-compose up -d
-
-      - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
 
       # Download the latest stable release kubectl
       # - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
