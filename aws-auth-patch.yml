@@ -12,6 +12,7 @@ data:
       - system:masters
       rolearn: arn:aws:iam::132249640088:role/UdacityFlaskDeployCBKubectlRole
       username: build
+      
   mapRoles: |
    - groups:
      - system:masters
