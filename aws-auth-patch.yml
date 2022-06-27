@@ -12,6 +12,12 @@ data:
       - system:masters
       rolearn: arn:aws:iam::132249640088:role/UdacityFlaskDeployCBKubectlRole
       username: build
+  mapRoles: |
+   - groups:
+     - system:masters
+     rolearn: arn:aws:iam::132249640088:role/alx-flask-app-CodeBuildServiceRole-1WGJ70T2YIQKF
+     username: codebuild-project-service-role
+
 kind: ConfigMap
 metadata:
   creationTimestamp: "2022-05-11T11:16:26Z"
