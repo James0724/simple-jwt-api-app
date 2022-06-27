@@ -15,7 +15,7 @@ kind: Deployment
 metadata:
   name: simple-jwt-api
 spec:
-  replicas: 3
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
