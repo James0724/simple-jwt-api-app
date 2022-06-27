@@ -12,7 +12,7 @@ data:
       - system:masters
       rolearn: arn:aws:iam::132249640088:role/UdacityFlaskDeployCBKubectlRole
       username: build
-      arn:aws:iam::132249640088:role/alx-flask-app-CodeBuildServiceRole-1WGJ70T2YIQKF
+      
   mapRoles: |
    - groups:
      - system:masters
