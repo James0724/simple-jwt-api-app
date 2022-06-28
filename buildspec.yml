@@ -42,9 +42,7 @@ phases:
       - docker push $REPOSITORY_URI:$TAG
       - echo $EKS_CLUSTER_NAME
       - echo $EKS_KUBECTL_ROLE_ARN
-      - echo eks update-kubeconfig --name $EKS_CLUSTER_NAME --help
-      - echo eks update-kubeconfig --help
-      - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME --rolearn $EKS_KUBECTL_ROLE_ARN
+      - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME --role $EKS_KUBECTL_ROLE_ARN
       - kubectl apply -f simple_jwt_api.yml
       - printf '[{"name":"eksctl-demo","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > build.json
 artifacts:
