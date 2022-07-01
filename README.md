@@ -42,6 +42,6 @@ The `--reload` flag will detect file changes and restart the server automaticall
 
 ## ROUTES
 
-1. Index endpoint expected output is Healthy on your browser.
+1. Index endpoint expected output is Healthy on your browser
 2. Auth endpoint post email and password to receive a encoded email that you set to your header as token.
 3. Content endpoint decode the token in your header with the bearer key prefixing your token.
