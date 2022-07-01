@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: simple-jwt-api
-          image: 132249640088.dkr.ecr.us-east-2.amazonaws.com/myfinalproject-ecrdockerrepository-hvzda2s3x6ih
+          image: CONTAINER_IMAGE
           securityContext:
             privileged: false
             readOnlyRootFilesystem: false
